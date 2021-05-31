@@ -1,0 +1,91 @@
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(127, 127, 127); /* Цвет запасной вариант */
+  background-color: rgba(89, 89, 89, 0.4); /* Черный с непрозрачностью */
+}
+.modal-content {
+  background-color: #FEFEDE;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 57%;
+  max-height: 500px;
+  height: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+.modal.open{
+  display: block;
+}
+/* Кнопка закрытия */
+.closeModalPopup {
+  background-color: #f300b4;
+  color: #ffffff;
+  font-family: cursive;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.closeModalPopup:hover,
+.closeModalPopup:focus {
+  background-color: #ff626c;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.closeModal-field{
+  margin-left: 485px;
+}
+.placeForForm{
+  max-width: 500px;
+  width: 100%;
+  height: 70%;
+}
+.register-form {
+  width: 100%;
+  height: auto;
+
+  & .label-auth {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 55px;
+    & span{
+      width: 200px;
+    }
+    & input{
+      border-radius: 6px;
+      width: 65%;
+      height: 40px;
+      padding-left: 10px;
+      &:focus{
+        outline: none;
+      }
+      &.valid{
+        background-color: #7dfe7d;
+      }
+      &.error{
+        background-color: #fba1be;
+      }
+    }
+  }
+}

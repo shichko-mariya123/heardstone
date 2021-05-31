@@ -1,0 +1,24 @@
+.start-page {
+  background: url("https://cdn.vox-cdn.com/thumbor/r_66CVo8jmjumCruoMrIerVitiY=/0x67:1920x1147/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/48701091/hearthstone_format_key_art.0.0.jpg") fixed;
+  background-size: cover;
+  min-height:90vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around
+  
+  &__container {
+  width: fit-content;
+  position: absolute;
+  display: flex;
+  }
+  
+  
+  &__container > h1 {
+  font-size: 65px;
+  font-weight: bold;
+  color: white;
+  line-height: 65px;
+  }
+  
+  }
